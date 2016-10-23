@@ -1,0 +1,28 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "Example ES6 app with docker",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node --presets node6 ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/gomezd/dockerfiles.git"
+  },
+  "keywords": [
+    "node",
+    "docker"
+  ],
+  "author": "David Gomez <david.garcia.mx@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gomezd/dockerfiles/issues"
+  },
+  "homepage": "https://github.com/gomezd/dockerfiles#readme",
+  "dependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-preset-node6": "^11.0.0"
+  }
+}

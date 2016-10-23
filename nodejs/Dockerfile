@@ -1,6 +1,11 @@
 FROM node:latest
 MAINTAINER David Gomez <david.garcia.mx@gmail.com>
 
-ADD app.js /var/www/app.js
+ADD app.js /var/www/
+ADD package.json /var/www/
 
-CMD ["/usr/bin/node", "/var/www/app.js"]
+WORKDIR /var/www
+
+RUN npm install
+
+CMD [ "npm", "run", "start" ]
